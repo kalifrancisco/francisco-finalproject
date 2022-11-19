@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+	background-color: #161414;
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Bold";
+	src: url("../assets/helveticanow/HelveticaNowText-Bold.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Light";
+	src: url("../assets/helveticanow/HelveticaNowText-Light.woff") format("WOFF");
+}
+
+@font-face {
+	font-family: "Helvetica Now Text Medium";
+	src: url("../assets/helveticanow/HelveticaNowText-Medium.woff") format("WOFF");
+}
+
+
+* {
+	text-decoration: none;
+}
+
+main {
+	margin: 40px;
+}
+
+.head {
+	margin: 40px;
+}
+
+
+
+/* nav flex styling */
+/* QUES: why not following margin
+QUES: space between links */
+/* ADD MARGIN SPECIFIC STYLING */
+.nav_links {
+	list-style: none;
+	/* margin: 40px; */
+	display: flex;
+	justify-content: end;
+	flex-direction: row;
+	align-items: center;
+	font-family: "Helvetica Now Text Medium";
+	text-transform: uppercase;
+	
+
+}
+
+nav img {
+	position: fixed;
+}
+
+/* .kf {
+	width: 49px;
+} */
+
+.nav_links li a {
+	color: white;
+	font-weight: 300;
+}
+
+.navitem {
+	padding: 20px;
+	transition: transform 220ms ease-in-out;
+	transition-delay: 99ms;
+}
+
+/* ISSUE: focus and current not working!!! */
+/* .nav_links .nav_item1:focus, .nav_links .nav_item2:focus, .nav_links .nav_item3:focus {
+	font-weight: 540;
+} */
+
+.nav_links .nav_item1:hover, .nav_links .nav_item2:hover, .nav_links .nav_item3:hover {
+	font-weight: 550;
+	transform: translateY(-5.3px);
+}
+
+/* skip to main done */
+  .skip a {
+	background: white;
+	border-radius: round;
+	padding: 3px;
+	-webkit-transition: top 1s ease-out;
+	transition: top .5s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -40px;
+  }
+  
+  .skip a:focus {
+	position: absolute;
+	top: 20px;
+  }
+
+  /* style main header message: */
+.hithere h1 {
+	font-size: 68px;
+	font-family: "Helvetica Now Text Bold";
+	font-weight: bold;
+	color: white;
+	line-height: 62.5px;
+	width: 350px;
+	/* position: relative; */
+	/* top: 240px; */
+	margin-top: 240px;
+  }
+ 
+.intro_sub {
+	font-size: 18px;
+	font-weight: 100px;
+	color: white;
+	position: absolute;
+	top: 415px;
+	width: 410px;
+	font-family: "Inter";
+	/* margin-top: 4.6%; */
+	margin-top: 60px;
+	line-height: 125%; 
+}
+
+/* QUES: make flex */
+/* #intro_stickers {
+	display: flex;
+	width: 100px;
+	position: absolute;
+	z-index: -1;
+	margin-top: 45px;
+	flex-direction: row;
+	left: 22.8%;
+	
+} */
+
+#smile {
+	/* left: 20.8%; */
+	left: 289px;
+	margin-top: -7.2%;
+	width: 6.5%;
+	position: absolute;
+	z-index: 1;
+	transform: rotate(-8.4deg);
+
+}
+
+#red2022 {
+	/* left: 22.6%; */
+	left: 318px;
+	margin-top: -7.4%;
+	width: 7.2%;
+	position: absolute;
+	transform: rotate(11.4deg);
+}
+
+  /* PROJECTS PAGE CSS: */
+  /* FIX FOR H1!!! */
+/* .projects_header h1 {
+	font-family: "Helvetica Now Text Light";
+	font-size: 57px;
+	font-weight: bold;
+	color: white;
+	line-height: 62.5px;
+	width: 350px;
+	position: relative;
+	top: 160px;
+} */
+
+#proj_header {
+	font-family: "Helvetica Now Text Light";
+	font-size: 57px;
+	font-weight: bold;
+	color: white;
+	line-height: 62.5px;
+	width: 350px;
+	position: relative;
+	top: 160px;
+}
+
+#projsticker {
+	width: 122px;
+	position: absolute;
+	margin-top: 33.5px;
+	left: 24.9%;
+	transform: rotate(11.4deg);
+}
+
+/* hide projects nav until grid done */
+#hidern {
+	display: none;
+}
+
+/* .projects_main {
+	display: grid;
+	grid-template-columns: 20% 20%;
+	grid-template-rows: 20% 20%;
+	row-gap: 15px;
+	width: 30px;
+	margin-top: 350px;
+} */
+
+.projects_main {
+	display: grid;
+	justify-self: center;
+	justify-content: center;
+	grid-template-columns: 2fr 2fr; /* 2 cols total*/
+	/* padding: 170px; */
+	margin-top: 170px;
+	/* gap: 40px; */
+}
+
+.projects_main img {
+	width: 600px;
+	padding: 22px;
+}
+
+
+
+
+
+/* ABOUT CSS: */
+#about_header {
+	font-family: "Helvetica Now Text Light";
+	font-size: 57px;
+	font-weight: bold;
+	color: white;
+	line-height: 62.5px;
+	width: 350px;
+	position: relative;
+	top: 90px;
+}
+
+.about_text {
+	font-size: 18px;
+	font-weight: 100px;
+	color: white;
+	position: absolute;
+	top: 300px;
+	width: 410px;
+	font-family: "Inter";
+	line-height: 125%; 
+/* 	line-height:  */
+}
+
+.dalle_imgs {
+	display: grid;
+	margin-top: 220px;
+	grid-template-columns: 100px 100px 100px;
+	gap: 4%;
+	justify-content: center;
+  align-content: center;
+}
+
+.dalle_imgs img {
+	max-width: 100%;
+	/* padding: 20px; */
+	/* margin: 20px 20px; */
+}
+
+.dalle_imgs img:nth-child(10) {
+	grid-column: 1 / 4;
+}
+
+
