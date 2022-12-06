@@ -1000,4 +1000,17 @@ nav:focus {
 		hidden {
 			transition: none;
 		}
+
+		inner_cursor {
+			transition: none;
+		}
+
+		outer_cursor {
+			transition: none;
+		}
+
+		navitem {
+			transition: none;
+		}
+
 	}
