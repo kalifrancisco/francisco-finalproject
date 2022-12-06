@@ -220,7 +220,12 @@ nav:focus {
 	margin-top: -68px;
 }
 
-#footimg {
+/* #footimg {
+	width: 62%;
+	padding: 2px;
+} */
+
+.footer_imgs img {
 	width: 62%;
 	padding: 2px;
 }
@@ -644,11 +649,7 @@ nav:focus {
 		margin-left: 82%;
 		margin-top: -29px;
 	}
-	
-	#footimg {
-		width: 62%;
-		padding: 2px;
-	}
+
 	
 	.sticker_container {
 		display: flex;
@@ -963,6 +964,7 @@ nav:focus {
 
 	  .mov5 {
 		grid-area: mov5;
+		height: 98%;
 	  }
 
 	  .mis1 {
